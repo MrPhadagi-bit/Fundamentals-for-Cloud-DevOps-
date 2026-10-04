@@ -2,10 +2,6 @@
 
 > **Complete beginner-to-production guide**: what Linux is, how it works, and why every Cloud & DevOps engineer lives in it — with a real example for every concept.
 
-[![Linux](https://img.shields.io/badge/Linux-Kernel-blue?logo=linux)](https://www.kernel.org/)
-[![Cloud](https://img.shields.io/badge/Cloud-DevOps-orange)](https://aws.amazon.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-
 
 ## 1. What is Linux?
 
@@ -202,7 +198,11 @@ sequenceDiagram
 
 Linux isn't just an OS for DevOps — **it is the substrate of the cloud**. Every container is a Linux process, every instance is a Linux box, every CI step runs bash on Linux. Master the terminal, and every cloud tool becomes legible underneath.
 
-> *"The cloud is just someone else's Linux servers."* — now you know how to run them. 
+> *"The cloud is just someone else's Linux servers."* — now you know how to run them.
+
+[![Linux](https://img.shields.io/badge/Linux-Kernel-blue?logo=linux)](https://www.kernel.org/)
+[![Cloud](https://img.shields.io/badge/Cloud-DevOps-orange)](https://aws.amazon.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
 ---
 
