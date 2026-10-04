@@ -1,4 +1,4 @@
-# 🐧 Linux for Cloud & DevOps Engineers
+#  Linux for Cloud & DevOps Engineers
 
 > **Complete beginner-to-production guide**: what Linux is, how it works, and why every Cloud & DevOps engineer lives in it — with a real example for every concept.
 
@@ -6,39 +6,12 @@
 [![Cloud](https://img.shields.io/badge/Cloud-DevOps-orange)](https://aws.amazon.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
----
-
-## 📑 Table of Contents
-
-1. [What is Linux?](#1-what-is-linux)
-2. [Linux Architecture — The Big Picture](#2-linux-architecture--the-big-picture)
-3. [Why Cloud & DevOps Engineers Use Linux](#3-why-cloud--devops-engineers-use-linux)
-4. [Linux Distributions](#4-linux-distributions)
-5. [The File System Hierarchy](#5-the-file-system-hierarchy)
-6. [Essential Commands (with Examples)](#6-essential-commands-with-examples)
-7. [Users, Groups & Permissions](#7-users-groups--permissions)
-8. [Package Management](#8-package-management)
-9. [Process Management](#9-process-management)
-10. [Networking in Linux](#10-networking-in-linux)
-11. [SSH — The DevOps Lifeline](#11-ssh--the-devops-lifeline)
-12. [Shell Scripting for Automation](#12-shell-scripting-for-automation)
-13. [systemd & Services](#13-systemd--services)
-14. [Cron & Scheduling](#14-cron--scheduling)
-15. [Logging & Observability](#15-logging--observability)
-16. [Storage & Disk Management](#16-storage--disk-management)
-17. [Containers: Why Linux Matters Even More](#17-containers-why-linux-matters-even-more)
-18. [Security Best Practices](#18-security-best-practices)
-19. [Linux in the Real DevOps Workflow](#19-linux-in-the-real-devops-workflow)
-20. [Interview Cheat Sheet](#20-interview-cheat-sheet)
-21. [Roadmap & Resources](#21-roadmap--resources)
-
----
 
 ## 1. What is Linux?
 
 **Linux is a free, open-source, Unix-like operating system kernel** — the core piece of software that talks to your hardware and lets everything else run on top of it.
 
-> 💡 **Key fact:** Technically, "Linux" is just the **kernel**. When people say "Linux," they usually mean a full **distribution** (kernel + tools + libraries + package manager), like Ubuntu or Amazon Linux.
+>  **Key fact:** Technically, "Linux" is just the **kernel**. When people say "Linux," they usually mean a full **distribution** (kernel + tools + libraries + package manager), like Ubuntu or Amazon Linux.
 
 ### A bit of history
 
