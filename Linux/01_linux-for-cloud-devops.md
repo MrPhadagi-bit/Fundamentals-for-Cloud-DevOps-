@@ -137,7 +137,7 @@ cat /etc/os-release
 
 ---
 
-## 4. Linux in the Real DevOps Workflow
+## 5. Linux in the Real DevOps Workflow
 
 How the concepts above chain together in a typical day:
 
@@ -171,7 +171,7 @@ sequenceDiagram
 ---
 
 
-## 5. Roadmap & Resources
+## 6. Roadmap & Resources
 
 ### 🗺️ Learning path (4 weeks)
 
