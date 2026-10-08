@@ -1,6 +1,6 @@
 # 10. Crontab: Scheduling Repetitive Tasks
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Read and write crontab expressions for any schedule
 > - Create, view, and remove your own crontab
 > - Automate backups and cleanup jobs like a real DevOps engineer
@@ -61,7 +61,7 @@ Each line in a crontab follows this format:
 | Every 5 minutes | `*/5 * * * *` |
 | 1st of every month at noon | `0 12 1 * *` |
 
-> 🧠 Read the expression aloud field-by-field: `30 17 * * 1` = "at minute 30, hour 17, any day of month, any month, day-of-week 1 (Monday)".
+>  Read the expression aloud field-by-field: `30 17 * * 1` = "at minute 30, hour 17, any day of month, any month, day-of-week 1 (Monday)".
 
 ---
 
@@ -87,7 +87,7 @@ crontab -l
 crontab -r
 ```
 
-> ⚠️ `crontab -r` deletes *every* job without confirmation. Prefer commenting out lines in `crontab -e` instead, so you can restore them later.
+>  `crontab -r` deletes *every* job without confirmation. Prefer commenting out lines in `crontab -e` instead, so you can restore them later.
 
 **To edit another user's (or root's) crontab:**
 
@@ -121,7 +121,7 @@ which node
 which bash
 ```
 
-> 💡 A very common beginner failure: the command works perfectly in your terminal but silently does nothing in cron — because cron's `PATH` is minimal. Full paths fix this.
+>  A very common beginner failure: the command works perfectly in your terminal but silently does nothing in cron — because cron's `PATH` is minimal. Full paths fix this.
 
 ---
 
@@ -136,7 +136,7 @@ Let's say you want to back up logs every night at 11 PM.
 tar -czf /backups/logs_$(date +\%F).tar.gz /var/log
 ```
 
-> ⚠️ Notice the `\%` — inside crontab, `%` is a special character (it means "newline"), so it **must be escaped** as `\%`. In the script itself it's fine either way.
+>  Notice the `\%` — inside crontab, `%` is a special character (it means "newline"), so it **must be escaped** as `\%`. In the script itself it's fine either way.
 
 **2. Make it executable** (Chapter 08!):
 
@@ -177,7 +177,7 @@ Deletes files older than 7 days in `/tmp` every day at 2 AM.
 - `-mtime +7` — modified more than 7 days ago
 - `-delete` — remove them
 
-> ⚠️ Be careful with `-delete` in cron — a typo in the path can remove the wrong things. Test the `find` command *without* `-delete` first and inspect the list.
+>  Be careful with `-delete` in cron — a typo in the path can remove the wrong things. Test the `find` command *without* `-delete` first and inspect the list.
 
 ---
 
@@ -217,7 +217,7 @@ env -i /usr/bin/python3 /home/ubuntu/scripts/backup.py
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -230,7 +230,7 @@ env -i /usr/bin/python3 /home/ubuntu/scripts/backup.py
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `crontab -e` and add a job that appends the current date to `~/cron_test.log` every minute (`* * * * *`). Watch the file fill up.
 2. Write a script that copies `/etc/hostname` into `~/backups/` with a timestamp, and schedule it every day at 6 AM.
