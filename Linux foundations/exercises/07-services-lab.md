@@ -1,4 +1,4 @@
-# 🏋️ Lab 07 — Services and Processes
+#  Lab 07 — Services and Processes
 
 **Prereqs:** [Chapter 07](../07-services-and-processes.md) · **Time:** ~25 min · **Needs:** sudo access
 
@@ -46,7 +46,7 @@ Manage services with systemd and diagnose problems from logs.
    - `sudo systemctl stop fakeapp && sudo systemctl disable fakeapp`
    - Delete the unit file, then `sudo systemctl daemon-reload`.
 
-## ✅ Check Yourself
+##  Check Yourself
 - `start` vs `enable` — which survives a reboot?
 - Where do you look first when a service fails?
 - Why prefer `reload` over `restart` when possible?
