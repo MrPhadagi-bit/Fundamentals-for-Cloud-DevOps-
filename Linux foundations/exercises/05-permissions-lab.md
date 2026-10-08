@@ -1,4 +1,4 @@
-# 🏋️ Lab 05 — Permissions and Ownership
+#  Lab 05 — Permissions and Ownership
 
 **Prereqs:** [Chapter 05](../05-permissions-and-ownership.md) · **Time:** ~20 min · **Needs:** sudo access
 
@@ -33,7 +33,7 @@ Read, set, and repair file permissions — including the classic 403 fix.
    - Fix ownership & permissions exactly as you would for a real web server.
    - Verify a "visitor" can read the file: `sudo -u nobody cat /var/www/fakeapp/index.html`
 
-## ✅ Check Yourself
+##  Check Yourself
 - What does `chmod 777` actually allow — and why is it dangerous?
 - Why must SSH private keys be `600`?
 - Decode: `-rwxr-xr-x 1 root root` — who can run this file?
