@@ -1,4 +1,4 @@
-# 🏋️ Lab 08 — Bash Scripting
+#  Lab 08 — Bash Scripting
 
 **Prereqs:** [Chapter 08](../08-bash-scripting.md) · **Time:** ~30 min
 
@@ -29,7 +29,7 @@ Requirements:
 - Deliberately break Script 3 (point SOURCE at a nonexistent path) and confirm the error handler fires and the exit code is 1.
 - Make watchdog.sh check multiple files with a `for` loop.
 
-## ✅ Check Yourself
+##  Check Yourself
 - Why the shebang? Why `set -e`?
 - What's the difference between `exit 0` and `exit 1`?
 - Why quote variables like `"$SOURCE"`?
@@ -81,5 +81,5 @@ for f in /etc/hostname /etc/passwd /nonexistent; do
 done
 ```
 
-> 🎓 Did you spot the intentional `DESTRICT_DIR` typo in the solution? That's why we test scripts — and why `set -e` exists. Fix it to `$DEST_DIR` and it runs clean.
+>  Did you spot the intentional `DESTRICT_DIR` typo in the solution? That's why we test scripts — and why `set -e` exists. Fix it to `$DEST_DIR` and it runs clean.
 </details>
