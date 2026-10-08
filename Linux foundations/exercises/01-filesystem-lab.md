@@ -1,4 +1,4 @@
-# 🏋️ Lab 01 — The Filesystem
+#  Lab 01 — The Filesystem
 
 **Prereqs:** [Chapter 01](../01-the-filesystem.md) · **Time:** ~15 min
 
@@ -30,7 +30,7 @@ Navigate the Linux filesystem confidently using absolute and relative paths.
    - `~/projects/app/config.yml`
    - `./backup.tar.gz`
 
-## ✅ Check Yourself
+##  Check Yourself
 - Can you reach `/var/log` from anywhere with one command?
 - Do you know the difference between `cd logs` and `cd /logs`?
 - What lives in `/etc`? In `/var`?
