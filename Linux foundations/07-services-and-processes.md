@@ -1,6 +1,6 @@
 # 07. Services and Processes: Keeping Things Running
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Distinguish a process from a service
 > - Manage any service with `systemctl` (start/stop/restart/enable/status)
 > - Make services survive reboots and crashes
@@ -45,7 +45,7 @@ kill <PID>          # polite stop (SIGTERM — "please exit")
 kill -9 <PID>       # force kill (SIGKILL — no cleanup possible)
 ```
 
-> ⚠️ Reach for `-9` only when the process ignores normal termination. It can't clean up temp files or close connections gracefully.
+>  Reach for `-9` only when the process ignores normal termination. It can't clean up temp files or close connections gracefully.
 
 **Kill by name:**
 ```bash
@@ -80,7 +80,7 @@ The status output tells you everything at a glance:
    ...
 ```
 
-- `active (running)` = healthy ✅
+- `active (running)` = healthy 
 - `failed` = crashed — scroll down for the last log lines, right in the same output
 - `inactive (dead)` = stopped
 
@@ -149,7 +149,7 @@ And if a service keeps crash-looping, check *why* before restarting blindly — 
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -161,7 +161,7 @@ And if a service keeps crash-looping, check *why* before restarting blindly — 
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Check the status of `ssh` (or `cron`): is it active? enabled?
 2. Stop `cron` with `systemctl`, verify with `status`, then `enable --now` it again.
