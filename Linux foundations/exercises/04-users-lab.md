@@ -1,4 +1,4 @@
-# 🏋️ Lab 04 — Users and Groups
+#  Lab 04 — Users and Groups
 
 **Prereqs:** [Chapter 04](../04-users-and-groups.md) · **Time:** ~20 min · **Needs:** sudo access
 
@@ -29,7 +29,7 @@ Create users, manage groups, and understand `sudo`.
    - As dev1, run `sudo ls /root`. What happens? (dev1 isn't in the sudo group.)
    - Back as your user, remove `dev1` and the `webteam` group.
 
-## ✅ Check Yourself
+##  Check Yourself
 - Why is `-a` critical in `usermod -aG`?
 - What does `sudo` add compared to running as root directly?
 - Why did group membership need re-activation?
