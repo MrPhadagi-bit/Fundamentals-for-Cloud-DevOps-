@@ -1,6 +1,6 @@
 # 11. Monitoring Basics: Watching Your System's Health
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Check live CPU, memory, and process usage with `top`/`htop`
 > - Find disk hogs with `df` and `du` before they take a server down
 > - Watch network usage and identify bandwidth consumers
@@ -47,14 +47,14 @@ htop
 - Press **F9** to kill a process
 - Color-coded meters make bottlenecks obvious at a glance
 
-> 🛠️ If it's not installed:
+>  If it's not installed:
 
 ```bash
 sudo apt install htop   # Debian/Ubuntu
 sudo yum install htop   # CentOS/RHEL
 ```
 
-> 💡 In `top`, press `1` to see per-core CPU breakdown, `M` to sort by memory, and `P` to sort by CPU. Press `q` to quit.
+>  In `top`, press `1` to see per-core CPU breakdown, `M` to sort by memory, and `P` to sort by CPU. Press `q` to quit.
 
 ---
 
@@ -76,7 +76,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        50G   45G  2.5G  95% /
 ```
 
-> 🚨 Here, you're in trouble — only 5% free. You'd better clean up logs or expand storage *now*, before the disk fills completely (a full root disk breaks services in strange ways).
+>  Here, you're in trouble — only 5% free. You'd better clean up logs or expand storage *now*, before the disk fills completely (a full root disk breaks services in strange ways).
 
 **Check folder size:**
 
@@ -109,7 +109,7 @@ iftop
 
 This shows which IPs/ports are using your bandwidth, live.
 
-> 🛠️ To install:
+>  To install:
 
 ```bash
 sudo apt install iftop
@@ -129,7 +129,7 @@ Or use the more modern, faster replacement:
 ss -tuln
 ```
 
-> 💡 You met `ss -tuln` in [Chapter 09 — Networking Essentials](../09-linux-networking-essentials.md) — monitoring and networking go hand in hand.
+> You met `ss -tuln` in [Chapter 09 — Networking Essentials](../09-linux-networking-essentials.md) — monitoring and networking go hand in hand.
 
 ---
 
@@ -151,7 +151,7 @@ top
 kill -9 <PID>
 ```
 
-> ⚠️ `kill -9` (SIGKILL) is the *last resort* — the process can't clean up after itself. Try plain `kill <PID>` (SIGTERM) first; escalate to `-9` only if it ignores you.
+>  `kill -9` (SIGKILL) is the *last resort* — the process can't clean up after itself. Try plain `kill <PID>` (SIGTERM) first; escalate to `-9` only if it ignores you.
 
 **3. Check disk space:**
 
@@ -171,7 +171,7 @@ du -sh /var/log/*
 sudo rm /var/log/old-app.log
 ```
 
-> ⚠️ Prefer truncating active logs (`sudo truncate -s 0 /var/log/app.log`) instead of deleting them — deleting a file an app still holds open doesn't actually free the space until the app restarts.
+>  Prefer truncating active logs (`sudo truncate -s 0 /var/log/app.log`) instead of deleting them — deleting a file an app still holds open doesn't actually free the space until the app restarts.
 
 **5. Restart the service:**
 
@@ -179,7 +179,7 @@ sudo rm /var/log/old-app.log
 sudo systemctl restart nginx
 ```
 
-**Problem resolved in 5 minutes.** That's DevOps. 🎉
+**Problem resolved in 5 minutes.** That's DevOps. 
 
 ---
 
@@ -196,7 +196,7 @@ These tools provide dashboards and alerts when thresholds are breached (e.g., CP
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -209,7 +209,7 @@ These tools provide dashboards and alerts when thresholds are breached (e.g., CP
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `top`, press `1`, and identify which cores are busiest. Then install and explore `htop`.
 2. Run `df -h`. Which mount point has the least free space?
@@ -219,7 +219,7 @@ These tools provide dashboards and alerts when thresholds are breached (e.g., CP
 
 ---
 
-## 🎓 Final Thoughts
+##  Final Thoughts
 
 Congratulations! You now have a solid foundation in:
 
@@ -237,6 +237,6 @@ This isn't just theory — **this is how real systems work.**
 
 ### You're Not "Too Late" to Learn Linux
 
-Every DevOps expert once googled *"How do I exit Vim?"* 😉
+Every DevOps expert once googled *"How do I exit Vim?"* 
 
 ➡️ Review the [Cheatsheet](../cheatsheet.md) and practice with the [Exercises](../exercises/). You did it — bootcamp complete! 🎉
