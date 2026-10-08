@@ -1,4 +1,4 @@
-# 🏋️ Lab 02 — The Terminal
+#  Lab 02 — The Terminal
 
 **Prereqs:** [Chapter 02](../02-the-terminal.md) · **Time:** ~15 min
 
@@ -29,7 +29,7 @@ Use core terminal commands, help pages, and history efficiently.
    - Run `ls -l ~/labs/ch01/notes.txt`.
    - What are the file's size, date, and owner?
 
-## ✅ Check Yourself
+##  Check Yourself
 - How do you search for a past command without scrolling?
 - What does `cd -` do?
 - How do you safely re-run the last command with sudo?
