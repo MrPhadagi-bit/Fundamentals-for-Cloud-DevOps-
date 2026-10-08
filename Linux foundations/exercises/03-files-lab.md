@@ -1,4 +1,4 @@
-# 🏋️ Lab 03 — Files and Directories
+#  Lab 03 — Files and Directories
 
 **Prereqs:** [Chapter 03](../03-files-and-directories.md) · **Time:** ~20 min
 
@@ -32,7 +32,7 @@ Create, edit, view, move, copy, and delete files and directories safely.
    - `ls` the exact path, then delete `website/img` and `draft`'s old name.
    - Try `rm -ri website/` and answer the prompts. What does `-i` change?
 
-## ✅ Check Yourself
+##  Check Yourself
 - Which flag makes `mkdir` create parents? Which makes `rm` ask first?
 - How do you copy a directory?
 - Why do we back up before editing?
