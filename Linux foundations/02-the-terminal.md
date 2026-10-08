@@ -1,6 +1,6 @@
 # 02. The Terminal: Your Primary Interface
 
-> 🎯 **By the end of this chapter you will be able to:**
+> **By the end of this chapter you will be able to:**
 > - Explain what a terminal and shell are (and how they differ)
 > - Use the 6 essential navigation/information commands fluently
 > - Recover previous commands with history and `!!`
@@ -150,7 +150,7 @@ cat notes.txt               # print your file back
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -161,7 +161,7 @@ cat notes.txt               # print your file back
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Use `man ls` to find what the `-h` flag does.
 2. Press `Ctrl+R`, type `mkdi`, and see what it finds in your history.
