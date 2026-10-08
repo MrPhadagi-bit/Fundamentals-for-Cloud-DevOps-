@@ -1,10 +1,10 @@
-# 📌 Linux DevOps Cheatsheet
+#  Linux DevOps Cheatsheet
 
 One page with every essential command from the bootcamp. Bookmark it.
 
 ---
 
-## 🗂️ Filesystem & Navigation
+##  Filesystem & Navigation
 
 ```bash
 pwd                 # where am I?
@@ -19,7 +19,7 @@ cd -                # previous directory
 
 **Key directories:** `/etc` configs · `/var/log` logs · `/home` users · `/usr` software · `/tmp` temp files
 
-## 📝 Files & Directories
+##  Files & Directories
 
 ```bash
 mkdir dir                  # create directory
@@ -35,7 +35,7 @@ cp -r src dst              # copy (recursively)
 rm file / rm -r dir        # delete (permanent!)
 ```
 
-## 👥 Users & Groups
+##  Users & Groups
 
 ```bash
 whoami / id                # who am I?
@@ -49,7 +49,7 @@ sudo <cmd>                 # run as root
 sudo !!                    # re-run last command with sudo
 ```
 
-## 🔐 Permissions
+##  Permissions
 
 ```bash
 ls -l                      # view permissions
@@ -65,7 +65,7 @@ sudo chown -R www-data:www-data /var/www/
 **Numbers:** r=4, w=2, x=1 → `rwx`=7, `rw-`=6, `r-x`=5, `r--`=4
 **String:** `-rwxr-x---` → `-` file type, `rwx` owner, `r-x` group, `---` others
 
-## 📦 Packages (APT)
+##  Packages (APT)
 
 ```bash
 sudo apt update            # refresh package list
@@ -78,7 +78,7 @@ apt search / apt show pkg  # find / inspect
 dpkg -l | grep pkg         # is it installed?
 ```
 
-## ⚙️ Services & Processes
+##  Services & Processes
 
 ```bash
 ps aux | grep nginx        # find a process
@@ -96,7 +96,7 @@ journalctl -u <svc> -f             # follow live
 journalctl -u <svc> --since today  # today's logs
 ```
 
-## 🤖 Bash Scripting
+##  Bash Scripting
 
 ```bash
 #!/bin/bash                # shebang — line 1 always
@@ -116,7 +116,7 @@ exit 0 / exit 1            # success / failure
 
 ---
 
-## ⏱️ 60-Second Troubleshooting Flow
+##  60-Second Troubleshooting Flow
 
 1. **"Permission denied"** → `ls -l` → wrong perms? `chmod`. Wrong owner? `sudo chown`.
 2. **"Command not found"** → not installed? `sudo apt install`. Typo? Use Tab.
