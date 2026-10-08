@@ -1,4 +1,4 @@
-# 🏋️ Lab 06 — Installing Software
+#  Lab 06 — Installing Software
 
 **Prereqs:** [Chapter 06](../06-installing-software.md) · **Time:** ~20 min · **Needs:** sudo access
 
@@ -31,7 +31,7 @@ Install, inspect, update, and remove software with APT.
 6. **(Bonus) Repo caution**
    - Look at `/etc/apt/sources.list.d/`. What third-party sources exist on your system?
 
-## ✅ Check Yourself
+##  Check Yourself
 - Why run `apt update` before `install`?
 - `remove` vs `purge` — when does each make sense?
 - What cleans up orphaned dependencies?
