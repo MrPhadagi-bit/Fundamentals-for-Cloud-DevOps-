@@ -35,15 +35,15 @@ A complete, beginner-friendly guide to Linux fundamentals — designed for aspir
 | 09 | [Linux Networking Essentials](09-linux-networking-essentials.md) | IP addresses, DNS, ports, firewall (`ufw`), exposing apps |
 | 10 | [Crontab: Scheduling Repetitive Tasks](10-crontab-scheduling-repetitive-tasks.md) | Cron syntax, scheduling backups and cleanups, debugging jobs |
 | 11 | [Monitoring Basics](11-monitoring-basics.md) | CPU/memory/disk/network health, troubleshooting slow servers |
-| 📌 | [Cheatsheet](cheatsheet.md) | All essential commands on one page |
-| 🏋️ | [Exercises](exercises/) | Hands-on labs to practice every chapter |
+|  | [Cheatsheet](cheatsheet.md) | All essential commands on one page |
+|  | [Exercises](exercises/) | Hands-on labs to practice every chapter |
 
 **Each chapter follows the same format:**
-1. 🎯 **Learning objectives** — what you'll be able to do
-2. 📖 **Step-by-step concept explanations** — nothing assumed, nothing skipped
-3. 💻 **Copy-paste examples** — real commands with real output
-4. ⚠️ **Common pitfalls** — mistakes beginners make (and how to avoid them)
-5. ✅ **Try it yourself** — a mini task to lock in the knowledge
+1.  **Learning objectives** — what you'll be able to do
+2.  **Step-by-step concept explanations** — nothing assumed, nothing skipped
+3.  **Copy-paste examples** — real commands with real output
+4.  **Common pitfalls** — mistakes beginners make (and how to avoid them)
+5.  **Try it yourself** — a mini task to lock in the knowledge
 
 ---
 
