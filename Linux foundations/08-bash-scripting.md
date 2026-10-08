@@ -1,6 +1,6 @@
 # 08. Bash Scripting: Automate Everything
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Write, make executable, and run a Bash script
 > - Use variables, conditions, and loops to add logic
 > - Handle errors so failures don't go unnoticed
@@ -50,7 +50,7 @@ chmod +x myscript.sh
 ./myscript.sh
 ```
 
-> ⚠️ You **must** use `./myscript.sh`, not just `myscript.sh` — the current directory isn't in your `PATH` by default (a deliberate security measure).
+>  You **must** use `./myscript.sh`, not just `myscript.sh` — the current directory isn't in your `PATH` by default (a deliberate security measure).
 
 ## Step 4 — Variables
 
@@ -88,7 +88,7 @@ fi
 | `[ "$a" = "$b" ]` | strings are equal (note spaces!) |
 | `[ $? -eq 0 ]` | last command succeeded |
 
-> ⚠️ Spaces inside `[ ... ]` are **mandatory**: `[ -f x ]` works, `[-f x]` fails with "command not found".
+>  Spaces inside `[ ... ]` are **mandatory**: `[ -f x ]` works, `[-f x]` fails with "command not found".
 
 ## Step 6 — Loops
 
@@ -157,7 +157,7 @@ echo "Deployment complete!"
 3. Pull the latest code
 4. Restart the app service
 
-> 💡 Schedule it with `cron` (e.g., nightly auto-deploy), or trigger it from a CI/CD pipeline. That's DevOps in a nutshell.
+>  Schedule it with `cron` (e.g., nightly auto-deploy), or trigger it from a CI/CD pipeline. That's DevOps in a nutshell.
 
 ## Step 9 — Pro Tips
 
@@ -196,7 +196,7 @@ echo "Backup complete: $ARCHIVE"
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -208,7 +208,7 @@ echo "Backup complete: $ARCHIVE"
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Write `hello.sh` that prints your name and today's date.
 2. Write a script that creates a directory `~/backups`, copies `/etc/hostname` into it, and prints the result with `ls -l`.
