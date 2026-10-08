@@ -1,6 +1,6 @@
 # 04. Users and Groups: Managing Access
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Explain what users and groups are (and why services run as their own users)
 > - Create users and add them to groups
 > - Give a user passwordless access to a specific tool (e.g., Docker)
@@ -56,7 +56,7 @@ su - john          # - = load their full environment (like logging in)
 exit               # switch back
 ```
 
-> 💡 `adduser` is friendlier (Debian/Ubuntu); `useradd` is the portable standard.
+>  `adduser` is friendlier (Debian/Ubuntu); `useradd` is the portable standard.
 
 ## Step 4 — Groups: Permissions for Teams
 
@@ -73,7 +73,7 @@ groups john         # groups for a specific user
 sudo usermod -aG docker john
 ```
 
-> ⚠️ **Don't forget `-a`!** `usermod -G` *replaces* all the user's groups; `-aG` **appends**. Forgetting `-a` can lock yourself out of `sudo`.
+>  **Don't forget `-a`!** `usermod -G` *replaces* all the user's groups; `-aG` **appends**. Forgetting `-a` can lock yourself out of `sudo`.
 
 The user must log out and back in (or run `newgrp docker`) for the change to take effect.
 
@@ -142,7 +142,7 @@ docker ps              # works, no sudo!
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -153,7 +153,7 @@ docker ps              # works, no sudo!
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `id` — what is your UID, and which groups are you in?
 2. Create a user `trainee`, set a password, and switch to them with `su - trainee`.
