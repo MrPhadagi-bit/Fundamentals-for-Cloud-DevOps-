@@ -1,6 +1,6 @@
 # 06. Installing Software: Package Managers
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Explain what a package manager does and why Linux doesn't need an "app store"
 > - Install, update, and remove software with `apt`
 > - Understand the difference between `remove` and `purge`
@@ -41,7 +41,7 @@ sudo apt install nginx   # Step 2: install
 
 Your system keeps a local **index** of available packages. `apt update` re-downloads that index from the configured repositories — like refreshing your app store. Without it, you might install an outdated version, or fail to find a package at all.
 
-> ⚠️ **Pitfall:** `apt update` updates the *list*; it updates **nothing** on your system. `apt upgrade` updates the *software*. Beginners confuse these constantly.
+>  **Pitfall:** `apt update` updates the *list*; it updates **nothing** on your system. `apt upgrade` updates the *software*. Beginners confuse these constantly.
 
 ```bash
 sudo apt install git           # version control
@@ -117,11 +117,11 @@ sudo apt install -y nodejs
 
 Adding a repository means trusting that vendor — so only add repos from sources you recognize.
 
-> ⚠️ **Never blindly pipe `curl ... | sudo bash` from a random website.** Read the script first (`curl -fsSL URL | less`), then execute.
+>  **Never blindly pipe `curl ... | sudo bash` from a random website.** Read the script first (`curl -fsSL URL | less`), then execute.
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -133,7 +133,7 @@ Adding a repository means trusting that vendor — so only add repos from source
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `apt search json` and find one package you recognize.
 2. Install `htop`, run it, and quit with `q`.
