@@ -1,6 +1,6 @@
 # 05. Permissions and Ownership: Controlling Access
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Read permission strings like `-rwxr-xr--` at a glance
 > - Convert between symbolic (`rwx`) and numeric (`755`) permissions
 > - Fix "Permission denied" and "403 Forbidden" errors for real
@@ -48,7 +48,7 @@ Break it down position by position:
 | `w` (2) | Modify contents | Create/delete files inside |
 | `x` (1) | Execute as a program | Enter (`cd`) into it |
 
-> 💡 Directories need `x` to *enter* — a directory with `r--` lets you see names but not open anything inside.
+>  Directories need `x` to *enter* — a directory with `r--` lets you see names but not open anything inside.
 
 ## Step 3 — Numeric Permissions: The Math
 
@@ -109,7 +109,7 @@ sudo chown alice:devs report.txt     # change owner AND group
 sudo chown -R www-data:www-data /var/www/html/   # recursive
 ```
 
-> 💡 `-R` (recursive) applies to everything inside a directory. Powerful — and dangerous if pointed at the wrong path.
+>  `-R` (recursive) applies to everything inside a directory. Powerful — and dangerous if pointed at the wrong path.
 
 ## Step 6 — Real-World Scenario: Fixing a 403 Forbidden Flask App
 
@@ -154,7 +154,7 @@ Read it: **owner** (nimesha) can run it; **group** (devs) can run it; **others**
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -166,7 +166,7 @@ Read it: **owner** (nimesha) can run it; **group** (devs) can run it; **others**
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Create `secret.txt`, write a line in it, then set permissions to `600`. Can another user read it? (`sudo -u nobody cat secret.txt`)
 2. Create `run.sh` containing `#!/bin/bash` and `echo hello`. What happens before and after `chmod +x run.sh`?
