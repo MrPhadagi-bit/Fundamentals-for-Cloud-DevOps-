@@ -1,6 +1,6 @@
 # 01. The Filesystem: Everything Is a File
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Explain how the Linux filesystem is organized (and why there's no `C:\` drive)
 > - Navigate to any directory using absolute and relative paths
 > - Know what's inside the 10 most important system directories
@@ -56,7 +56,7 @@ Think of it like a family tree:
 | `/dev/` | Device files for hardware | Disks, USB, terminals. |
 | `/proc/` & `/sys/` | Virtual files exposing kernel/process info | System monitoring & diagnostics. |
 
-💡 **Memory trick:** `/etc/` = "**e**very **t**hing **c**onfigured", `/var/` = "**var**iable data (logs grow)".
+ **Memory trick:** `/etc/` = "**e**very **t**hing **c**onfigured", `/var/` = "**var**iable data (logs grow)".
 
 ## Step 4 — Navigate Like a Pro
 
@@ -84,7 +84,7 @@ cd ~/projects    # ~ is a shortcut for your home directory
 cd               # no argument = home directory
 ```
 
-> ⚠️ **Pitfall:** `cd /logs` (absolute) is **not** the same as `cd logs` (relative). One looks for `/logs` at the root — which usually doesn't exist.
+>  **Pitfall:** `cd /logs` (absolute) is **not** the same as `cd logs` (relative). One looks for `/logs` at the root — which usually doesn't exist.
 
 ### Tab completion — use it always
 
@@ -137,7 +137,7 @@ Notice the pattern: **config → `/etc/`, content → `/var/www/`, logs → `/va
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `pwd` — where are you right now?
 2. Go to `/etc`, list its contents with `ls -l`, and find one file you recognize.
@@ -145,4 +145,4 @@ Notice the pattern: **config → `/etc/`, content → `/var/www/`, logs → `/va
 4. From `/var/log`, go up one level, then into `www` (if it exists) using relative paths.
 5. Bonus: what does `ls /` show? Count how many directories you can now name.
 
-➡️ Ready for more? Do the [Filesystem Lab](../exercises/01-filesystem-lab.md), or continue to [Chapter 02: The Terminal](../02-the-terminal.md).
+ Ready for more? Do the [Filesystem Lab](../exercises/01-filesystem-lab.md), or continue to [Chapter 02: The Terminal](../02-the-terminal.md).
