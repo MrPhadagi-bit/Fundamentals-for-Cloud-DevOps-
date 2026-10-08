@@ -1,6 +1,6 @@
 # 09. Linux Networking Essentials: Know Your Connections
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Inspect your machine's IP addresses, interfaces, and routing table
 > - Test connectivity and diagnose DNS problems
 > - Find which services are listening on which ports
@@ -17,7 +17,7 @@ Networking is the heart of DevOps. Whether you're:
 
 …you must understand how Linux handles networking. This chapter gives you the essentials to survive and thrive in DevOps environments.
 
-> 💡 **Remember:** In Linux, *everything is a file* — even networks! Interfaces appear under `/sys/class/net/`, and network state is exposed through files like `/proc/net/tcp`.
+>  **Remember:** In Linux, *everything is a file* — even networks! Interfaces appear under `/sys/class/net/`, and network state is exposed through files like `/proc/net/tcp`.
 
 ---
 
@@ -33,7 +33,7 @@ Before typing commands, it helps to know the core concepts. Here's how the syste
 | **Routing Table** | Defines paths for outgoing packets | `ip route` |
 | **Network Interfaces** | Physical or virtual devices (`eth0`, `lo`) | `ip link`, `ifconfig` |
 
-> 💡 Interface names like `eth0` (older naming) or `ens33`/`enp0s3` (predictable naming) are just labels — what matters is each has a unique IP address.
+>  Interface names like `eth0` (older naming) or `ens33`/`enp0s3` (predictable naming) are just labels — what matters is each has a unique IP address.
 
 ---
 
@@ -55,7 +55,7 @@ Shows all interfaces and their assigned IPs.
 ifconfig
 ```
 
-> ⚠️ `ifconfig` is deprecated on many modern distros. Prefer `ip` — it's faster and shows more detail (including interface *state*: `UP`/`DOWN`).
+>  `ifconfig` is deprecated on many modern distros. Prefer `ip` — it's faster and shows more detail (including interface *state*: `UP`/`DOWN`).
 
 ---
 
@@ -73,7 +73,7 @@ ping google.com
 ping 8.8.8.8
 ```
 
-> 🧠 **Diagnostic trick:** If DNS is down, pinging domain names fails but pinging IPs may still work. That's how you know the problem is name resolution, not connectivity.
+>  **Diagnostic trick:** If DNS is down, pinging domain names fails but pinging IPs may still work. That's how you know the problem is name resolution, not connectivity.
 
 **Check DNS resolution:**
 
@@ -91,7 +91,7 @@ traceroute google.com
 
 This shows **every hop** your request takes to reach its destination — useful for spotting slow points in the network path.
 
-> 🛠️ If `traceroute` isn't installed: `sudo apt install traceroute`
+>  If `traceroute` isn't installed: `sudo apt install traceroute`
 
 ---
 
@@ -203,11 +203,11 @@ curl http://192.168.1.100:3000
 
 **Done!** You just exposed a local app over the network. This exact workflow applies whether the app runs on a VM, a cloud instance, or inside a Docker container with published ports.
 
-> 🧠 **If local works but remote fails**, the problem is almost always the firewall (`sudo ufw status`) or the app binding to `127.0.0.1` instead of `0.0.0.0`.
+>  **If local works but remote fails**, the problem is almost always the firewall (`sudo ufw status`) or the app binding to `127.0.0.1` instead of `0.0.0.0`.
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -220,7 +220,7 @@ curl http://192.168.1.100:3000
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Run `ip a` and identify your machine's IP address and loopback interface.
 2. Ping `8.8.8.8`, then ping `google.com`. Note the difference in output.
