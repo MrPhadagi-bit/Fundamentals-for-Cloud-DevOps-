@@ -1,6 +1,6 @@
 # 03. Files and Directories: Create, Edit, Move, Delete
 
-> 🎯 **By the end of this chapter you will be able to:**
+>  **By the end of this chapter you will be able to:**
 > - Create files and directories (including nested trees in one command)
 > - View file contents with `cat`, `less`, `head`, `tail` — and live-tail logs
 > - Move, rename, and copy files like a professional
@@ -35,7 +35,7 @@ mkdir -p reports/2025/July
 
 Without `-p`, this fails unless `reports/2025` already exists. With `-p`, every missing level is created.
 
-> 💡 The pattern `mkdir -p` also **succeeds silently** if the directory already exists — which makes it perfect for scripts.
+>  The pattern `mkdir -p` also **succeeds silently** if the directory already exists — which makes it perfect for scripts.
 
 ## Step 3 — Create Files with `touch`
 
@@ -91,7 +91,7 @@ mv notes.txt ~/documents/         # move to another directory
 mv config.yml /etc/nginx/nginx.conf   # move AND rename in one step
 ```
 
-> ⚠️ **Pitfall:** `mv` **overwrites** destination files without warning. There's no undo.
+>  **Pitfall:** `mv` **overwrites** destination files without warning. There's no undo.
 
 **Safety trick — never clobber files:**
 ```bash
@@ -124,7 +124,7 @@ rm -r myfolder/        # delete a folder and everything inside
 rm -rf myfolder/       # -f = force, never ask
 ```
 
-> ⚠️ **⚠️ `rm -rf` permanently deletes. There is no trash, no undo.** One classic disaster is `rm -rf /home/user /tmp` (a stray space) — it deletes your entire home directory. Double-check every path.
+>  ** `rm -rf` permanently deletes. There is no trash, no undo.** One classic disaster is `rm -rf /home/user /tmp` (a stray space) — it deletes your entire home directory. Double-check every path.
 
 **Safer habits:**
 - `ls` the path first to confirm what you're deleting
@@ -169,7 +169,7 @@ ls -l                   # confirm it's gone
 
 ---
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 | Mistake | Fix |
 |---|---|
@@ -180,7 +180,7 @@ ls -l                   # confirm it's gone
 
 ---
 
-## ✅ Try It Yourself
+##  Try It Yourself
 
 1. Create `~/practice/docs` with one command (nested).
 2. Inside it, create `readme.txt` and write two lines with nano.
